@@ -1,0 +1,28 @@
+PRAGMA forigen_keys = ON; 
+DROP TABLE IF EXISTS artists;
+DROP TABLE IF EXISTS albums;
+DROP TABLE IF EXISTS songs;
+
+CREATE TABLE artists (
+  id INTEGER PRIMARY KEY,
+  artistName TEXT NOT NULL,
+  genre TEXT NOT NULL,
+  monthlyListeners INTEGER NOT NULL
+);
+
+CREATE TABLE albums (
+  id INTEGER PRIMARY KEY,
+  name TEXT NOT NULL,
+  releaseYear INTEGER NOT NULL,
+  listeners INTEGER NOT NULL,
+  artistId INTEGER NOT NULL,
+  FOREIGN KEY (artistId) REFERENCES artists(id) ON DELETE CASCADE
+);
+
+CREATE TABLE songs (
+  id INTEGER PRIMARY KEY,
+  songName TEXT NOT NULL,
+  releaseYear INTEGER NOT NULL,
+  albumId INTEGER NOT NULL,
+  FOREIGN KEY (albumId) REFERENCES albums(id) ON DELETE CASCADE
+);

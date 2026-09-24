@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Orbitron&display=swap');
+
+body {
+    background-color:lightblue;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.navLink {
+    width: 125px;
+    height: 35px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #8ed2ff;
+    text-decoration: none;
+    /* margin:20px; */
+}
+
+.navLink a {
+    text-decoration: none;
+}
+.navLink a:hover {
+    color: #000000;
+}
+
+.navLink:hover {
+    color: #ffffff;
+    background-color: #ffffff;
+    text-decoration: underline;
+}
+
+.navBar nav {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #e1f3ff;
+    height: 70px;
+    width: 100%;
+}
+
+.container2 {
+    display: flex;
+    gap: 10px ;
+    flex-wrap: wrap;
+    margin: 30px;
+    justify-content: center;
+}
+
+.container2 div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    border: 2px solid #336587;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #0077c7;
+    color: white;
+    margin: 10px;
+    padding: 50px;
+    border-radius: 5px;
+}
+
+.button button {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    border: none;
+    outline: none;
+}
+
+button {
+    border: none;
+    outline: none;
+}
+
+button:hover {
+    border: 2px solid black ;
+}
+
+.apple {
+    background: url("apple.png") no-repeat center;
+    background-size: contain;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+#start {
+    background-color: green;
+}
+
+#pause {
+    background-color: orange;
+}
+
+#stop{
+    background-color: red; 
+}
+
+#timer {
+    font-family: Orbitron, sans-serif;
+    font-size: 30px; 
+    color: white;
+}
+
+#timer:hover {
+    color: yellow;
+}
+
+.warning {
+    color: red !important; 
+    background-color: #000000;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+@media (max-width: 700px) {
+    .navBar nav {
+        flex-direction: column;
+        gap: 2px;
+    }
+    .navLink {
+        width: 90px;
+        height: 15px;
+    }
+    .container2 {
+        flex-direction: column;
+        font-size: 12px;
+        margin: 5px;
+        gap:5px ;
+    }
+    footer {
+        font-size: 12px;
+    }
+    
+}

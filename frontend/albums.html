@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="utf-8" />
+        <title>CS230 Assignment 5</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        
+        <div class="container">
+            <div class="navBar">
+                <nav>
+                    <div class="navLink"><a href="artists.html">Artists</a></div> 
+                    <div class="navLink"><a href="albums.html">Albums</a></div> 
+                    <div class="navLink"><a href="Songs.html">Songs</a></div> 
+                </nav>
+            </div>
+        </div>
+        
+        <main>
+            <div class="container2"> 
+                <div>
+                    <h2>Albums</h2>
+
+                    <input id="name" placeholder="Album Name">
+                    <input id="releaseYear" placeholder="Release Year">
+                    <input id="listeners" placeholder="Listeners">
+                    <input id="artistId" placeholder="Artist ID">
+                    <button onclick="createAlbum()">Create</button>
+                    
+                    <!--table-->
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Year</th>
+                                <th>Listeners</th>
+                                <th>Artist ID</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="albumTable"></tbody>
+                    </table>
+                </div>
+            </div>
+
+            <footer>
+                <br>
+                <section>
+                    Created By Adam Bennett, Student no.24524829
+                </section>
+                <br>
+            </footer>
+        </main>
+        <script src="albumScript.js" defer></script> 
+    </body>
+</html>

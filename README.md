@@ -49,23 +49,4 @@ The application allows users to manage artists, albums, and songs through a web-
 - CORS
 - SQLite
 
-CS230Assignment5/
-│
-├── frontend/
-│
-├── backend/
-│   ├── server.js
-│   ├── db.js
-│   ├── model.sql
-│   ├── routes/
-│   │   ├── artists.js
-│   │   ├── albums.js
-│   │   └── songs.js
-│   ├── controllers/
-│   │   ├── artistController.js
-│   │   ├── albumController.js
-│   │   └── songController.js
-│   └── data/
-│       └── app.db
-│
-└── screenshot.jpg
+
